@@ -1,0 +1,31 @@
+\documentclass[fleqn,explicit,twoside,openany]{tufte-book}
+
+\hypersetup{colorlinks}
+\usepackage[T1]{fontenc}
+\font\ttfsegoeuilsmall ../style/Colaborate-Thin at12pt
+\font\ttfsegoeuil ../style/Colaborate-Thin at16pt
+\font\ttfsegoeuilhuge ../style/Colaborate-Thin at30pt
+\usepackage{pdfpages,amsthm,amssymb,amsmath,xcolor,wrapfig,soul,lipsum,booktabs,graphicx,algorithm,algorithmic,answers,verbatim,fancyvrb,xspace,tikz,units,makeidx,tabularx,colortbl,multirow,calc}
+\usepackage[absolute,overlay]{textpos}
+
+\title[CIML: Contributed Chapter]{\ttfsegoeuilhuge CIML: Contributed Chapter}
+\author{\ttfsegoeuil Hal Daum\'e III}
+
+\setkeys{Gin}{width=\linewidth,totalheight=\textheight,keepaspectratio}
+\graphicspath{{figs/}}
+\fvset{fontsize=\normalsize}
+\usetikzlibrary{shapes,snakes}
+\input{../style/halbook.tex}
+\let\cleardoublepage\clearpage
+
+\begin{document}
+\setcounter{secnumdepth}{3}
+\frontmatter
+\includepdf[pages={1},frame=true,fitpaper=true,noautoscale,width=614.295pt,height=794.97pt]{../style/cover.pdf}
+
+\include{chapter-material}
+
+\bibliographystyle{plainnat}
+\bibliography{bibfile}
+
+\end{document}
